@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Quiz</h1>
+
+<div class="quiz-container">
+    <div class="question" id="question1">
+        <p>What is the fastest swimming fish in the ocean?</p>
+        <input type="radio" name="q1" value="correct"> Sailfish<br>
+        <input type="radio" name="q1" value="wrong"> Tuna<br>
+        <input type="radio" name="q1" value="wrong"> Salmon<br>
+</div>
+
+    <div class="question" id="question2">
+        <p>This type of house cat is almost exclusively female</p>
+        <input type="radio" name="q2" value="correct"> Calico<br>
+        <input type="radio" name="q2" value="wrong"> Scottish Fold<br>
+        <input type="radio" name="q2" value="wrong"> British Shorthair<br>
+    </div>
+
+    <div class="question" id="question3">
+        <p>Beneath its coat of black and white stripes, what color is the zebra's skin?</p>
+        <input type="radio" name="q3" value="correct"> Black<br>
+        <input type="radio" name="q3" value="wrong"> Blue<br>
+        <input type="radio" name="q3" value="wrong"> Yellow<br>
+    </div>
+
+    <div class="question" id="question4">
+        <p>An adult wolf has how many teeth?</p>
+        <input type="radio" name="q4" value="correct"> 42<br>
+        <input type="radio" name="q4" value="wrong"> 32<br>
+        <input type="radio" name="q4" value="wrong"> 22<br>
+    </div>
+
+    <div class="question" id="question5">
+        <p>The average gestation period for a pregnant giraffe is how long?</p>
+        <input type="radio" name="q5" value="correct"> Fifteen months<br>
+        <input type="radio" name="q5" value="wrong"> Thirteen months<br>
+        <input type="radio" name="q5" value="wrong"> Ten months<br>
+    </div>
+
+    <button onclick="calculateResults()">Submit</button>
+    <button onclick="retakeQuiz()" id="retakeBtn" style="display: none;">Retake Quiz</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
